@@ -8,7 +8,6 @@ height: 1000px;
 
 #heading{
     font-weight: bold;
-    font-style: italic;
     
 }
 
@@ -18,5 +17,13 @@ height: 1000px;
 }
 #places{
     text-align: center;
-    background-color: beige;
+    background-color: rgb(144, 207, 238);
+}
+
+.destination{
+    color: brown;
+}
+
+.place1{
+    font-style: italic;
 }
