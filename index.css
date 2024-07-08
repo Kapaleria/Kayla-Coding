@@ -5,3 +5,18 @@ background-color: aqua;
 width: 800px;
 height: 1000px;
 }
+
+#heading{
+    font-weight: bold;
+    font-style: italic;
+    
+}
+
+/* change font */
+#area1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#places{
+    text-align: center;
+    background-color: beige;
+}
