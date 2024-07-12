@@ -1,3 +1,10 @@
 .carousel{
     height: 400px;
 }
+
+.flexbox{
+    height: 200px;
+    background-color: blue;
+    /* starting to use flexbox */
+    display: flex;
+}
