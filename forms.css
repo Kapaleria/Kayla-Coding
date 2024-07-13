@@ -1,0 +1,27 @@
+.main{
+    /* background-color: rgb(229, 229, 175); */
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.form{
+    display: flex;
+    padding: 50px;
+    border-radius: 10px;
+    background-color: rgb(220, 240, 240);
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+.order-option{
+    padding: 10px;
+    border: 1px solid gray;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
