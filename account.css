@@ -1,0 +1,16 @@
+.main{
+    background-color: aqua;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.content{
+    border: 2px solid black;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 2px;
+}
