@@ -4,29 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Make your order</title>
+    <link rel="stylesheet" href="forms.css">
 </head>
 <body>
     <div class="main">
         <div class="form">
-            <form>
+            
+            <form id="form">
+                <h1>Place your order</h1>
+                <!-- enter your name -->
+                <div class="order-option">
                 <label>Name</label>
                 <input type="text" placeholder="Enter your name" required>
+                </div>
 
+                <!-- enter your email -->
+                     <div class="order-option">
                 <label for="email">Email</label>
                 <input type="email" required>
+                </div>
 
+                <!-- enter your phone number -->
+                <div class="order-option">
                 <label>Phone Number</label>
                 <input type="tel" name="phone" required>
+                    </div>
 
-                <label>What is your order?</label>
-                <!-- drop down menu -->
-                <select name="order" id="order">
-                    <option value="coffee">coffee</option>
-                    <option value="cocktail">cocktail</option>
-                    <option value="water">water</option>
-                </select>
+                    <!-- enter your order -->
+                    <div class="order-option">
+                        <label for="">Select your drink(s)</label>
+                        
+                        <div class="menu-item">
+                            <input type="checkbox" id="cocktail" name="meal" value="cocktail">
+                            <label for="">Cocktail</label>
+                        </div>
+
+                        <div class="menu-item">
+                            <input type="checkbox" id="water" name="meal" value="water">
+                            <label for="pizza">Cocktail</label>
+                        </div>
+                
                
-
+                </div>
             </form>
         </div>
     </div>
