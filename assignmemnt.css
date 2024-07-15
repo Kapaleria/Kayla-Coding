@@ -1,0 +1,33 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    /* background-color: bisque; */
+}
+
+.details{
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form{
+    background-color: rgb(180, 242, 221);
+    padding: 10px 30px 10px 30px;
+    border-radius: 20px;
+    border: 3px dotted rgb(0, 145, 255);
+    margin-bottom: 10px;
+    
+}
+
+.back{
+    display: flex;
+    justify-content: center;
+
+}
