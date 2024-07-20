@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch statements</title>
+    <style>
+
+    </style>
+</head>
+<body>
+
+    <div class="main">
+        <p id="position">KAYLA</p>
+
+        <p id="elevator"></p>
+    </div>
+
+    <script>
+            let number = 3; //declared a number and assigned 3 to it
+
+            switch(number){ //if(number==3)
+                case 1:
+                    text = "You are in first position"
+                    break;
+
+                    case 2:
+                    text = "You are in second position"
+                    break;
+
+                    case 3:
+                    text = "You are in third position"
+                    break;
+
+                    default: //else{}
+                        text = 'You are ungraded'      
+
+            }
+
+             document.getElementById('position').innerHTML= text
+
+             var level = 3;
+
+             switch(level){
+                case 1:
+                    reminder ='You are at level 1'
+                    break;
+
+                    case 2:
+                    reminder ='You are at level 2'
+                    break;
+
+                    default:
+                        reminder ='You are lost'
+             }
+
+             document.getElementById('elevator').innerHTML= reminder
+           
+    </script>
+</body>
+</html>
