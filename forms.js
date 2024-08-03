@@ -3,7 +3,7 @@ const mongoose = require ('mongoose')
 
 const app = express()
 
-const port = 4000;
+const port = 5000;
 
 mongoose.connect('mongodb+srv://Irene:irene@cluster0.fumaixk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
 .then(()=>console.log('connected to the DB'))
