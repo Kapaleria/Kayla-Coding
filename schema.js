@@ -16,3 +16,6 @@ const orderSchema = new mongoose.Schema({
         required:true
     }
 })
+
+//make new model of the schema
+module.exports = mongoose.model ('orders', orderSchema)
