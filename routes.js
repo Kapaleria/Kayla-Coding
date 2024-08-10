@@ -22,5 +22,22 @@ router.post('/orders', (req,res)=>{
 })
 
 //asynchronous approach
+router.post('/sendOrder', async(req,res)=>{
+    const order = new orders({
+      name:req.body.name,
+      email: req.body.email,
+      phoneNumber:req.body.phoneNumber
+    })
+   
+         try{
+            const savedOrder = await order.save()
+            res.json(savedOrder)
+         }
+         catch (err){
+            res.json({err})
+         }
+  })
+  
+
 
 module.exports = router
