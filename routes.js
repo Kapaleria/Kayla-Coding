@@ -4,9 +4,15 @@ const router = express.Router()
 
 const orders = require('./schema')
 
-//GET method
-router.get ('/', (req,res)=>{
-    res.json({mssg:'Hello'})
+//GET method (all orders)
+router.get ('/', async(req,res)=>{
+    try{
+        const allOrders =  await orders.find()
+        res.json(allOrders)
+    }
+    catch(err){
+        res.json({err})
+    }
 })
 
 //POST method
