@@ -15,6 +15,17 @@ router.get ('/', async(req,res)=>{
     }
 })
 
+//GET a specific order
+router.get('/:orderId', async (req,res)=>{
+  try{
+     const specificOrder= await orders.findById(req.params.orderId)
+     res.json(specificOrder)
+  }
+  catch(err){
+          res.json({err})
+  }
+})
+
 //POST method
 router.post('/orders', (req,res)=>{
   const order = new orders({
