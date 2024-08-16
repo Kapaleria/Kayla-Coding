@@ -2,7 +2,12 @@ const express = require('express')
 const mongoose = require ('mongoose')
 require('dotenv/config')
 
+const routes = require('./routes')
+const bodyParser = require('body-parser')
+
 const app = express()
+app.use(bodyParser.json())
+app.use('/api', routes)
 
 mongoose.connect(process.env.MONGODBLINK)
 .then(()=>console.log('connected to the DB'))
