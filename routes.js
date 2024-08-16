@@ -55,6 +55,36 @@ router.post('/sendOrder', async(req,res)=>{
          }
   })
   
+  // DELETE method
+  router.delete('/delete/:orderID',async(req,res)=>{
+    try{
+      const deletedPost = await orders.deleteOne(req.params.orderID)
+      res.json(deletedPost)
+    }
 
+    catch(err){
+      res.json({mssg:err.message})
+    }
+  })
+
+  //UPDATE method
+  router.patch('/update/:orderID', async(req,res)=>{
+    try{
+      const updatedOrder = await orders.updateOne(
+                           {_id:req.params.orderID},
+                          {$set:{name:req.body.name}}
+                                                  )
+      res.json(updatedOrder)
+    }
+    catch(err){
+      res.json({mssg:err.message})
+    }
+  })
 
 module.exports = router
+
+
+// function %variable% (){}
+// const %variable% =()=>{}
+
+  //()=>{}
