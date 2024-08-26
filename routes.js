@@ -58,7 +58,7 @@ router.post('/sendOrder', async(req,res)=>{
   // DELETE method
   router.delete('/delete/:orderID',async(req,res)=>{
     try{
-      const deletedPost = await orders.deleteOne(req.params.orderID)
+      const deletedPost = await orders.deleteOne({ _id: req.params.orderID })
       res.json(deletedPost)
     }
 
