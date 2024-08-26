@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Make your order</title>
+    <!-- link to external CSS file -->
     <link rel="stylesheet" href="forms.css">
 </head>
 <body>
@@ -15,19 +16,22 @@
                 <!-- enter your name -->
                 <div class="order-option">
                 <label>Name</label>
-                <input type="text" placeholder="Enter your name" required>
+                <input type="text"  id="name" placeholder="Enter your name" required>
+                <!-- the REQUIRED keyword brings a tool tip to the user,
+                 reminding him/her to fill in that specific 
+                 field if he tries to submit minus filling it in -->
                 </div>
 
                 <!-- enter your email -->
                      <div class="order-option">
                 <label for="email">Email</label>
-                <input type="email" required>
+                <input type="email" id="email" placeholder="Enter your email">
                 </div>
 
                 <!-- enter your phone number -->
                 <div class="order-option">
                 <label>Phone Number</label>
-                <input type="tel" name="phone" required>
+                <input type="tel" id="phoneNumber" placeholder="Enter your phone number" required>
                     </div>
 
                     <!-- enter your order -->
@@ -43,12 +47,16 @@
                             <input type="checkbox" id="water" name="meal" value="water">
                             <label for="pizza">Water</label>
                         </div>
-                
-               
+            
                 </div>
+                <!-- enter type -->
+                <button type="submit">Submit</button>
             </form>
+            
         </div>
+        
     </div>
     
+    <script src="fetch.js"></script>
 </body>
 </html>
